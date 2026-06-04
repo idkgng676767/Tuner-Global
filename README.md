@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# Tuner Global 📻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tuner Global is a modern, 3D-interactive radio streaming application that allows users to discover and listen to over 50,000 live radio stations from across the globe.
 
-Currently, two official plugins are available:
+### ✨ Features
+* **3D Interactive Globe:** Visualize and select radio stations from a global perspective.
+* **Real-time Audio Visualization:** See the music you're listening to with custom audio analysis.
+* **Deep Search:** Find stations by name, genre, or country with ease.
+* **Personalization:** Save your favorite stations and track your listening history locally.
+* **Keyboard-First Navigation:** Use shortcuts (like `/` to search) for a seamless experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠 Tech Stack
+Built with a modern web ecosystem:
+* **Framework:** React 19 + Vite
+* **Visualization:** Three.js (for the interactive globe)
+* **Styling:** Tailwind CSS + Radix UI (for polished, accessible components)
+* **Animations:** GSAP
+* **API Integration:** Radio-Browser API
 
-## React Compiler
+### 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/idkgng676767/Tuner-Global.git](https://github.com/idkgng676767/Tuner-Global.git)
+   cd Tuner-Global
 
-## Expanding the ESLint configuration
+2. **Install dependencies:**
+    ```bash
+    npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start the development server:**
+    ```bash
+    npm run dev
